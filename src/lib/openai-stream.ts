@@ -56,7 +56,11 @@ export async function OpenAIStream(payload: OpenAIStreamPayload) {
               // this is a prefix character (i.e., "\n\n"), do nothing
               return;
             }
+            //by now,the text is proper text line by line
+
+            //encoding step converts the text into a suitable format
             const queue = encoder.encode(text);
+            //enqueuing adds it to the stream for further processing or consumption.
             controller.enqueue(queue);
             counter++;
           } catch (e) {

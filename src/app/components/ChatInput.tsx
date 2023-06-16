@@ -18,6 +18,7 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
   const {
     messages,
     addMessage,
+    getMessage,
     removeMessage,
     updateMessage,
     setIsMessageUpdating,
@@ -39,11 +40,12 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
     },
     onMutate(message) {
       addMessage(message)
-    },
+    }, 
     onSuccess: async (stream) => {
       if (!stream) throw new Error('No stream')
 
       // construct new message to add
+      //adds an empty message then appends to it during updateMessage
       const id = nanoid()
       const responseMessage: Message = {
         id,
@@ -60,12 +62,24 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
       const decoder = new TextDecoder()
       let done = false
 
+      if (!done) {
+        
+      }
       while (!done) {
         const { value, done: doneReading } = await reader.read()
         done = doneReading
         const chunkValue = decoder.decode(value)
+        console.log("Chunk value:", chunkValue);
+        //can use this to hardcode when to direct
+        // if (chunkValue==="Hello"){
+        //   console.log("contains helo")
+        //   return;
+        // } else {
+        // }
         updateMessage(id, (prev) => prev + chunkValue)
       }
+
+      
 
       // clean up
       setIsMessageUpdating(false)
@@ -96,6 +110,12 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
                 isUserMessage: true,
                 text: input,
               }
+
+              // if (message.text == "case"){
+              //   console.log("it is case")
+              // } else {
+              //   sendMessage(message)
+              // }
 
               sendMessage(message)
             }
