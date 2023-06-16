@@ -8,8 +8,10 @@ import MarkdownLite from './MarkdownLite'
 interface ChatMessagesProps extends HTMLAttributes<HTMLDivElement> {}
 
 const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
+  //messages is an array containing all messages in the convo
   const { messages } = useContext(MessagesContext)
   const inverseMessages = [...messages].reverse()
+  console.log("length of messages",messages.length)
 
   return (
     <div

@@ -13,6 +13,7 @@ export const MessagesContext = createContext<{
   messages: Message[]
   isMessageUpdating: boolean
   addMessage: (message: Message) => void
+  getMessage: (id:string) => Message | undefined
   removeMessage: (id: string) => void
   updateMessage: (id: string, updateFn: (prevText: string) => string) => void
   setIsMessageUpdating: (isUpdating: boolean) => void
@@ -20,6 +21,7 @@ export const MessagesContext = createContext<{
   messages: [],
   isMessageUpdating: false,
   addMessage: () => {},
+  getMessage:()=>undefined,
   removeMessage: () => {},
   updateMessage: () => {},
   setIsMessageUpdating: () => {},
