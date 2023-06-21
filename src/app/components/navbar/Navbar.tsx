@@ -12,7 +12,7 @@ const links = [
     //add in contact and stuff under home
     {
         id: 2,
-        title: "About",
+        title: "About Us",
         url: "/about",
     },
     {
@@ -32,8 +32,8 @@ const links = [
     },
     {
         id: 6,
-        title: "User",
-        url: "/user",
+        title: "Account",
+        url: "/account",
     },
 ];
 
@@ -42,10 +42,11 @@ const Navbar = () => {
     return (
         //@ts-ignore
         <>
-            <Flex flexDirection="row" gap="20">
+            <Flex flexDirection="row" bg="#D9D9D9" h="3rem" pr="50" gap="20" 
+            justifyContent="flex-end" alignItems="center">
                 {links.map((link) => (
                     <Link key={link.id} href={link.url}>
-                        {link.title}
+                        <Text fontWeight="400" fontSize="14px">{link.title}</Text>
                     </Link>
                 ))}
             </Flex>

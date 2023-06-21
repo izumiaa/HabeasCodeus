@@ -1,16 +1,14 @@
 'use client';
 
 import {signOut} from "next-auth/react";
+import { Box, Text, VStack, Flex } from "@chakra-ui/react";
 
 const HomePage = () => {
     return (
         <>
-            <div>
-                this is the home page
-            </div>
-            <button onClick={()=>signOut()}>
-                logout
-            </button>
+        <Flex>
+            <Text></Text>
+        </Flex>
         </>
         
     )
