@@ -30,14 +30,13 @@ import {BsArrowUpRight,BsChatDots} from 'react-icons/bs'
 export interface ProfilecardProps {
     name: string;
     icon: string;
-    age: string;
     gender: string;
-    bio: string;
-    tags: string;
+    languages: string;
+    specialty: string;
 }
 
 const Profilecard: React.FC<ProfilecardProps> = ({
-    name, icon, age, gender, bio, tags
+    name, icon,gender,languages,specialty
 }) => {
 
     return (
@@ -48,13 +47,13 @@ const Profilecard: React.FC<ProfilecardProps> = ({
                 alignItems="center" justifyContent="center">
 
                 <Box mr="7px">
-                    <Avatar src="" h="6em" w="6em" />
+                    <Avatar src={icon} h="6em" w="6em" borderRadius="50%" />
                 </Box>
                 
                 <Flex flexDirection="column" mt="10px" ml="10px">
                 <Box display="flex" flexDirection="column"  mr="10px">
-                    <Text
-                        fontSize="28px" fontWeight="600" color="#110B03">{name}</Text>
+                    <Text fontFamily="Inter"
+                        fontSize="30px" fontWeight="600" color="#110B03">{name}</Text>
                     <Flex>
                         <Text fontSize="13px" fontWeight="500" >
                             Gender:

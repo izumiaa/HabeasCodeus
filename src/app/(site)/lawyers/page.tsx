@@ -4,12 +4,14 @@ import Profilecard from "@/app/components/lawyerdetails/profilecard/Profilecard"
 import { Box, Text, VStack, Flex, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 
 const Lawyers = () => {
+    var lawyerData = require("./MOCK_DATA.json")
+
     return (
         <Flex flexDirection="column" bg="#F7FAFC" h="100vh" pt="0"
-        position="relative" zIndex="1"
+        position="relative" zIndex="1" 
         justifyContent="center" alignItems="center">
 
-            <Flex flexDirection="column" w="45vw" mt="30px">
+            <Flex position="relative" flexDirection="column" w="45vw" mt="30px">
             <Text textAlign="center" fontSize="30px" fontWeight="500">
                 Our Partner Lawyers
             </Text>
@@ -20,9 +22,21 @@ const Lawyers = () => {
             </Text>
             </Flex>
 
-            <Flex bg="#abb8c3" w="80vw" h="100vh" justifyContent="center" mt="30px">
-            <Profilecard name="Sherlin Choo"icon="" age="18" gender="female" bio="" tags=""/>
-            </Flex>
+            <Box bg="#abb8c3" w="85vw" h="100vh" justifyContent="space-between" mt="30px" 
+            display="flex" flexDirection="row" flexWrap="wrap" padding="1rem">
+            {lawyerData.map((data:any,index:any)=>{
+                return(
+                <Box key={index}>
+                    <Profilecard 
+                    name={data.full_name} 
+                    gender={data.gender}
+                    languages={data.languages}
+                    specialty={data.specialty}
+                    icon={data.icon} />
+                </Box>
+                )
+            })}
+            </Box>
         </Flex>
     )
 }
