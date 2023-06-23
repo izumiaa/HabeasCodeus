@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <>
-    <div>hello world</div>
+    <Image src="/lawconnect.jpeg" ml="500px" alt="" width="200" height="200"/>
     <AuthForm/>
     </>
   )
