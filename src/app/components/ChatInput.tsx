@@ -109,7 +109,7 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
                 text: input,
               }
 
-              if (message.text == "case") {
+              if (message.text == "Can you give me legal advice for my case") {
                 console.log("it is case")
                 addMessage(message)
                 const replyMessage:Message={

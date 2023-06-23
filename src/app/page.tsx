@@ -5,8 +5,17 @@ export default function Home() {
 
   return (
     <>
-    <Image src="/lawconnect.jpeg" ml="500px" alt="" width="200" height="200"/>
+ <div className="flex min-h-full flex-col justify-center items-center py-12 sm:px-6 lg:px-8">
+      {/* <Image
+      alt="logo"
+      height="200"
+      width="100"
+      src="/lawconnect.jpeg"
+      className="mx-auto w-auto"
+      />     */}
+      </div>
     <AuthForm/>
+    
     </>
   )
 }
