@@ -27,8 +27,8 @@ const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
   const textArray: string[] = messages.map((message) => message.text);
   console.log(textArray);
   // call the function retrieveLawyers which will recommend lawyers based on category matching
-  const result = retrieveLawyers(textArray);
-  console.log(result);
+  const categoryResult = retrieveLawyers(textArray);
+  console.log(categoryResult);
 
   return (
     <div
