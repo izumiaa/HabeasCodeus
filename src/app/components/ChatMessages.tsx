@@ -6,7 +6,7 @@ import { FC, HTMLAttributes, useContext } from "react";
 import MarkdownLite from "./MarkdownLite";
 import { retrieveCategory } from "../matchingAlgo";
 
-// send category result to be used in ChatInput.tsx 
+// send category result to be used in ChatInput.tsx
 
 interface ChatMessagesProps extends HTMLAttributes<HTMLDivElement> {}
 
@@ -14,8 +14,8 @@ const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
   //messages is an array containing all messages in the convo
   const { messages } = useContext(MessagesContext);
   const inverseMessages = [...messages].reverse();
-  console.log("length of messages", messages.length);
-  console.log(messages);
+  // console.log("length of messages", messages.length);
+  // console.log(messages);
 
   // messages look like this:
   // [
@@ -27,10 +27,11 @@ const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
 
   // create an array of just the 'text' strings
   const textArray: string[] = messages.map((message) => message.text);
-  console.log(textArray);
+  // console.log(textArray);
   // call the function retrieveLawyers which will recommend lawyers based on category matching
   const promptsCategory = retrieveCategory(textArray);
-  console.log(promptsCategory);
+  localStorage.setItem("categoryToExport", JSON.stringify(promptsCategory));
+  // console.log(promptsCategory);
 
   return (
     <div
