@@ -113,12 +113,14 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
 
               if (message.text == "case") {
                 console.log("it is case")
+                addMessage(message)
                 const replyMessage:Message={
                   id:nanoid(),
                   isUserMessage:false,
-                  text:"it is case"
+                  text:"As an AI language model, I do not have access to personal or confidential information, and I cannot provide legal advice. It's important to consult with a qualified attorney who can review the details of your case and provide you with tailored advice based on their legal expertise. You can contact Lawyer Jessica Lee. Your chat ID is 123",
                 }
                 addMessage(replyMessage)
+                setInput('')
               } else {
                 sendMessage(message)
               }

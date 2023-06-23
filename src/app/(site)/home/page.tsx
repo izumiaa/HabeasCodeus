@@ -14,8 +14,8 @@ import {
 const HomePage = () => {
     return (
         <>
-            <Flex flexDirection="column" mt="3em" ml="5em">
-
+        <Flex bg="#F7FAFC" h="100vh">
+            <Flex flexDirection="column" mt="3em" ml="5em" >
                 <Box display="flex" flexDirection="column">
                     <Text fontSize='60px'
                         fontFamily="Inter"
@@ -38,7 +38,7 @@ const HomePage = () => {
                 </Box>
 
                 <Box mt="5em" ml="1rem" padding="10px" 
-                maxW="50vw" borderRadius="20px" bg="#e7d0ca">
+                maxW="50vw" borderRadius="20px" bg="#abb8c3">
                     <Text mt="0.5rem"
                         fontSize='18px'
                         fontFamily="serif"
@@ -48,7 +48,7 @@ const HomePage = () => {
                     <Accordion allowToggle allowMultiple gap="50">
                         <AccordionItem mt="0.5rem">
                             <h2>
-                                <AccordionButton _expanded={{ bg: '#abb8c3', color: 'white' }} 
+                                <AccordionButton 
                                 fontFamily="serif" maxW="50vw">
                                     <Box as="span" flex='1' textAlign='left' maxW="50vw" 
 >
@@ -74,16 +74,15 @@ const HomePage = () => {
                                 <AccordionButton _expanded={{ bg: '#abb8c3', color: 'white' }} 
                                 fontFamily="serif" maxW="50vw">
                                     <Box as="span" flex='1' textAlign='left' maxW="50vw">
-                                        I need help organising my court documents and important dates.
+                                        I want to view court cases similar to mine.
                                     </Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                             </h2>
                             <AccordionPanel fontFamily="serif">
                                 <Box maxW="50vw" overflowWrap="break-word"> 
-                                That's understandable! It can be hard to keep track of all court-related matters.
-                                We've got you covered! Head over to the "Court - Documents" page using the navbar. There,
-                                you will see a wide range of tools at your disposal.
+                                You can click on "Search" at the navigation bar to access our database of cases. 
+                                Simply type in your search terms to view cases similar to yours!
                                 </Box>
                             </AccordionPanel>
                             <Divider orientation='horizontal' />
@@ -93,7 +92,7 @@ const HomePage = () => {
 
                         <AccordionItem>
                             <h2>
-                                <AccordionButton _expanded={{ bg: '#abb8c3', color: 'white' }} 
+                                <AccordionButton 
                                 fontFamily="serif" maxW="50vw">
                                     <Box as="span" flex='1' textAlign='left' maxW="50vw" mb="0.5rem">
                                         I am worried I dont have enough money to file for court.
@@ -113,6 +112,7 @@ const HomePage = () => {
                     </Accordion>
                 </Box>
 
+            </Flex>
             </Flex>
         </>
 

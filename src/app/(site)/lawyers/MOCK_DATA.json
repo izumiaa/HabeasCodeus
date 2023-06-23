@@ -3,38 +3,42 @@
         "full_name": "Aryaman Mo",
         "gender": "Male",
         "languages": "English,Korean",
-        "specialty": "Family Law",
+        "specialty": "Criminal Law",
         "icon":"/lawyerIcons/AryamanMo.jpeg"
-        
     },
     {
-        "full_name": "Aryaman Mo",
-        "gender": "Male",
-        "languages": "English,Korean",
-        "specialty": "Family Law"
+        "full_name": "Jessica Lee",
+        "gender": "Female",
+        "languages": "English,Indonesian",
+        "specialty": "Family Law",
+        "icon":"/lawyerIcons/guy8.jpeg"
     },
     {
-        "full_name": "Aryaman Mo",
+        "full_name": "Kenneth Lee",
         "gender": "Male",
         "languages": "English,Korean",
-        "specialty": "Family Law"
+        "specialty": "Inheritance Law",
+        "icon":"/lawyerIcons/guy2.jpeg"
     },
     {
-        "full_name": "Aryaman Mo",
+        "full_name": "Ryan Tan",
         "gender": "Male",
-        "languages": "English,Korean",
-        "specialty": "Family Law"
+        "languages": "English,Japanese",
+        "specialty": "Family Law",
+        "icon":"/lawyerIcons/guy3.jpeg"
     },
     {
-        "full_name": "Aryaman Mo",
+        "full_name": "Bryan Kim",
         "gender": "Male",
-        "languages": "English,Korean",
-        "specialty": "Family Law"
+        "languages": "English,German",
+        "specialty": "Family Law",
+        "icon":"/lawyerIcons/guy4.jpeg"
     },
     {
-        "full_name": "Aryaman Mo",
+        "full_name": "Jason Keen",
         "gender": "Male",
-        "languages": "English,Korean",
-        "specialty": "Family Law"
+        "languages": "English,French",
+        "specialty": "Family Law",
+        "icon":"/lawyerIcons/guy5.jpeg"
     }
 ]

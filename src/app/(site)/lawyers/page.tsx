@@ -12,21 +12,22 @@ const Lawyers = () => {
         justifyContent="center" alignItems="center">
 
             <Flex position="relative" flexDirection="column" w="45vw" mt="30px">
-            <Text textAlign="center" fontSize="30px" fontWeight="500">
+            <Text textAlign="center" fontSize="30px" fontWeight="500" fontFamily="Inter">
                 Our Partner Lawyers
             </Text>
-            <Text mt="10px" textAlign="center" fontSize="15px" fontWeight="400" color="#4E4E4E">
+            <Text mt="10px" textAlign="center" fontSize="17px" fontFamily="Inter" fontWeight="400" color="#4E4E4E">
             We are grateful to compassionate pro bono lawyers working 
             with us to help you. They are a group of skilled lawyers who
             specialize in a wide range of legal fields.
             </Text>
             </Flex>
 
-            <Box bg="#abb8c3" w="85vw" h="100vh" justifyContent="space-between" mt="30px" 
+            {/* bg="#abb8c3"  */}
+            <Box w="85vw" h="100vh" justifyContent="space-between" mt="30px" 
             display="flex" flexDirection="row" flexWrap="wrap" padding="1rem">
             {lawyerData.map((data:any,index:any)=>{
                 return(
-                <Box key={index}>
+                <Box key={index} >
                     <Profilecard 
                     name={data.full_name} 
                     gender={data.gender}

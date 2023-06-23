@@ -1,0 +1,67 @@
+[
+    {
+        "Title":"Brown Julian Christopher Patric v Chia Ah Lek Christina [2002] SGDC 212",
+        "Summary":{
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "4 years separation",
+            "Verdict": "Husband was to pay the Wife a sum of money"
+        },
+        "Details":{
+            "Facts":"Petitioner (Husband) and the Respondent (Wife) were lawfully married at the Registry of Marriage, Singapore on 18th August 1990, with 3 children. Sometime in 2000, both parties filed divorce petitions on the ground of 4 years separation. "
+        }
+    },
+    {
+        "Title": "LR v LS [2005] SGDC 256",
+        "Summary": {
+            "Title": "LR v LS [2005] SGDC 256",
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "4 year separation",
+            "Verdict": "Husband was to pay the Wife and Son a sum of money"
+        }
+    },
+    {
+        "Title": "Ow Eng Yen v Robertson David Maitland [2001] SGDC 177",
+        "Summary":{
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "Husband had behaved in such a way that the Wife cannot reasonably be expected to live with him",
+            "Verdict": "Husband was to pay the Wife a sum of money"
+        }
+    },
+    {
+        "Title": "Lim Kok Sian Brandon v Ong Ai Geok (alias Wang Aiyu) [2005] 2 SLR(R) 437",
+        "Summary": {
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "Deed of separation",
+            "Verdict": "Husband was to pay for Wife’s monthly expenses"
+        }
+    },
+    {
+        "Title": "THL v THM [2015] SGHCF 11",
+        "Summary": {
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "-",
+            "Verdict": "The court ordered the Father to maintain the Mother at $9,500 per month for 4 years from 25th November 2015, after which he was to pay her a reduced sum of $2,000 per month."
+        }
+    },
+    {
+        "Title": "USA v USB [2020] 4 SLR 288",
+        "Summary": {
+            "Field": "Family Law",
+            "Familial_relation": "Husband and Wife",
+            "Issue": "Divorce",
+            "Reason": "Incapacitated husband",
+            "Verdict": "Husband was to pay for Wife’s monthly expenses"
+        }
+    }    
+
+]
