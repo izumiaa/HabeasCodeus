@@ -4,7 +4,9 @@ import { MessagesContext } from "@/context/messages";
 import { cn } from "@/lib/utils";
 import { FC, HTMLAttributes, useContext } from "react";
 import MarkdownLite from "./MarkdownLite";
-import { retrieveLawyers } from "../matchingAlgo";
+import { retrieveCategory } from "../matchingAlgo";
+
+// send category result to be used in ChatInput.tsx 
 
 interface ChatMessagesProps extends HTMLAttributes<HTMLDivElement> {}
 
@@ -27,8 +29,8 @@ const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
   const textArray: string[] = messages.map((message) => message.text);
   console.log(textArray);
   // call the function retrieveLawyers which will recommend lawyers based on category matching
-  const categoryResult = retrieveLawyers(textArray);
-  console.log(categoryResult);
+  const promptsCategory = retrieveCategory(textArray);
+  console.log(promptsCategory);
 
   return (
     <div

@@ -9,7 +9,7 @@
 
 // take in array of message history: 
 
-export function retrieveLawyers (prompts: string[]) {
+export function retrieveCategory (prompts: string[]) {
     // Initialize lawDictionary - an object that stores categories of law (such as Family, Criminal, Corporate, etc.) as keys, with corresponding arrays of related legal terms as their values.
     const lawDictionary: { [key: string]: string[] } = {
         "Family": ["divorce", "alimony", "adoption", "paternity", "child support", "domestic violence", "marriage", "guardianship", "spousal abuse", "custody", "children"], 
@@ -60,6 +60,7 @@ export function retrieveLawyers (prompts: string[]) {
   
     return maxCategory;
   }
+
 
 
     
