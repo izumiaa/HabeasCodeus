@@ -9,6 +9,8 @@
 
 // take in array of message history: 
 
+
+
 export function retrieveCategory (prompts: string[]) {
     // Initialize lawDictionary - an object that stores categories of law (such as Family, Criminal, Corporate, etc.) as keys, with corresponding arrays of related legal terms as their values.
     const lawDictionary: { [key: string]: string[] } = {
@@ -60,6 +62,24 @@ export function retrieveCategory (prompts: string[]) {
   
     return maxCategory;
   }
+
+
+export function retrieveLawyers(category: string) {
+  var lawyerData = require("../app/(site)/lawyers/MOCK_DATA.json")
+  console.log(lawyerData); 
+
+  const matchingLawyers: string[] = [];
+
+  for (const lawyer of lawyerData) {
+    if (lawyer.specialty.includes(category)) {
+      matchingLawyers.push(lawyer.full_name);
+    }
+  }
+
+  console.log(matchingLawyers); 
+
+  return matchingLawyers;
+}
 
 
 
