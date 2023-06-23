@@ -111,11 +111,11 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
                 text: input,
               }
 
-              // if (message.text == "case"){
-              //   console.log("it is case")
-              // } else {
-              //   sendMessage(message)
-              // }
+              if (message.text == "Can you help me with my case?"){
+                console.log("it is case")
+              } else {
+                sendMessage(message)
+              }
 
               sendMessage(message)
             }
