@@ -111,13 +111,20 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
                 text: input,
               }
 
-              if (message.text == "Can you help me with my case?"){
+              if (message.text == "case") {
                 console.log("it is case")
+                const replyMessage:Message={
+                  id:nanoid(),
+                  isUserMessage:false,
+                  text:"it is case"
+                }
+                addMessage(replyMessage)
               } else {
                 sendMessage(message)
               }
 
-              sendMessage(message)
+              //sendMessage(message)
+              
             }
           }}
           rows={2}
